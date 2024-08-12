@@ -1,0 +1,102 @@
+env:
+  stage: dev/staging/prod
+  debug: true/false
+
+aws:
+  region: XXXXXXXXX
+  accessKeyId: Adddsyvejc88hbdgsnkxoh
+  secretAccessKey: Ankdpie6bHdvsyhnkgafAfb
+  signatureVersion: s3v4
+
+lambdaApi:
+  iamProfileArn: XXXXXXXXX
+  vpcSecurityGroupId: sg-XXXXXXXXX
+  subNetId1: subnet-XXXXXXXXX
+  subNetId2: subnet-XXXXXXXXX
+	baseUrl: XXXXXXXXX
+
+sql:
+  engine: XXXXXXXXX
+  maxQuerySec: XXXXXXXXX
+
+webApp:
+  rootUrl: https://#.driveezpro.ca
+  icon: icon_driveez.png
+  localeDefault: en_US
+  localeFallback: en_US
+  contactEmail: info@driveezpro.ca
+  authCookie: 3y37fMKwRm37
+  staticSiteUrl: https://driveezpro.ca
+
+mobile:
+  learnerDeepLink: XXXXXXXXXX
+  instructorDeepLink: XXXXXXXXXX
+  androidStoreLink: XXXXXXXXXX
+  appleStoreLink: XXXXXXXXXX
+
+restApi:
+  jwtExpiryHours: 12
+
+s3:
+  maxImageSizeKB: 1000
+  maxAttachmentSizeKB: 10000
+  fileUploadBucket: XXXXXXXXXX
+
+sns:
+  platformApplicationArn: XXXXXXXXXX
+
+singleTenant:
+  title: WonderCar
+  legalEntity: WonderCar School LLC
+  logoUrl: https://wondercar.driveezpro.ca/uploads/app/logo_wondercar.png
+  dbHost: 127.0.0.1
+  dbPort: 3306
+  dbDatabase: XXXXXXXXXXXX
+  dbUsername: XXXXXXXXXXXX
+  dbPassword: XXXXXXXXXXXX
+  passHashKey: Landa
+  jwtSecret: USE_RANDOM_STRING_HERE
+  stripePKey: XXXXXXXXXXXX
+  stripeSKey: XXXXXXXXXXXX
+  stripeMethods: card
+
+multiTenant:
+  enabled: false
+  dbHost: 127.0.0.1
+  dbPort: 3306
+  dbDatabase: XXXXXXXXXXXX
+  dbUsername: XXXXXXXXXXXX
+  dbPassword: XXXXXXXXXXXX
+  cacheKey: USE_16_DIGIT_RANDOM_ALPHANUMERIC_ONLY
+  cacheExpiryHours: 1
+
+reports:
+  reportsdbUsername: XXXXXXXXXXXX
+  reportsdbPassword: XXXXXXXXXXXX
+
+smtp:
+  enabled: true
+  auth: true
+  host: 127.0.0.1
+  port: 25
+  protocol: ssl
+  username: XXXXXXXXXXXX
+  password: XXXXXXXXXXXX
+  fromAddress: no-reply@driveezpro.ca
+  fromName: DriveEZ Alerts
+  supportAddress: support@driveezpro.ca
+  singleToAddress: 
+
+sms:
+  enabled: true
+  defaultGateway: twilio
+
+twilio:
+  sid: XXXXXXXXXXXX
+  authToken: XXXXXXXXXXXX
+  phoneNumber: XXXXXXXXXXXX
+  
+africasTalking:
+  username: XXXXXXXXXXXX
+  key: XXXXXXXXXXXX
+  senderid: XXXXXXXXXXXX
