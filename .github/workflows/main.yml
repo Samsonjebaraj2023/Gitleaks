@@ -1,4 +1,4 @@
-name: gitleak
+name: gitleaks
 on:
   pull_request:
   push:
