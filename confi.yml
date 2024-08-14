@@ -1,5 +1,5 @@
 env:
-  stage: dev/staging/prod
+  stage: dev/staging/prods
   debug: true/false
 
 aws:
